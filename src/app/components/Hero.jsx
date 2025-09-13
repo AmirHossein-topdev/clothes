@@ -10,7 +10,7 @@ export default function Hero() {
   const images = ["/images/banner1.jpg", "/images/banner2.jpg"];
 
   return (
-    <section className="w-[90vw] mx-auto -mt-5 md:mt-3 flex flex-col md:flex-row md:items-stretch gap-4">
+    <section className=" mx-auto -mt-5 md:mt-3 flex flex-col md:flex-row md:items-stretch gap-4">
       {/* Swiper */}
       <div className="w-full md:w-3/4 flex items-center justify-center ">
         <div className="relative w-full rounded-2xl overflow-hidden">
