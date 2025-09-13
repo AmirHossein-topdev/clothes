@@ -102,7 +102,7 @@ export default function Story() {
             className="flex flex-col items-center focus:outline-none"
             onClick={() => setActiveIndex(idx)}
           >
-            <div className="w-17 h-17 rounded-full border-2 border-pink-500 p-1 cursor-pointer ">
+            <div className="w-17 h-17 rounded-full border-2 border-blue-500 p-1 cursor-pointer ">
               <img
                 src={user.avatar}
                 alt={user.name}
