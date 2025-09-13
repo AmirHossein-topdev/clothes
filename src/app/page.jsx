@@ -1,14 +1,15 @@
 "use client";
 import React from "react";
 import Stories from "./components/Stories";
-import Grade from "./shop/Grade";
 import GradeBox1 from "./shop/GradeBox1";
+import Categories from "./shop/Categories";
 import Hero from "./components/Hero";
 export default function Home() {
   return (
     <section className="w-[85vw] mx-auto">
       <Stories />
       <Hero />
+      <Categories />
       <GradeBox1 />
       {/* <Grade /> */}
       <p className="my-20 mx-auto w-[90vw]">
