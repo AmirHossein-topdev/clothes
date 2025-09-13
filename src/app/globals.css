@@ -12,3 +12,38 @@
   -ms-overflow-style: none; /* IE و Edge */
   scrollbar-width: none; /* Firefox */
 }
+.card {
+  width: 350px;
+  height: 350px;
+  background: #7b76ca;
+  position: relative;
+  border-radius: 30px;
+}
+.card-shape {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  border-radius: 20px 0 0 20px;
+}
+.card-shape::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  box-shadow: 5px 5px 0 5px #fff;
+  border-radius: 200px;
+}
+.card-shape::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  box-shadow: 5px 5px 0 5px #fff;
+  border-radius: 200px !important;
+}

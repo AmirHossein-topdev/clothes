@@ -4,6 +4,7 @@ import { LuCircleUser } from "react-icons/lu";
 import { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { FiSearch } from "react-icons/fi";
+import { usePathname } from "next/navigation";
 // 👇 ایمپورت Navbar
 import Navbar from "./Navbar";
 
@@ -18,6 +19,9 @@ export default function Header() {
 
   // state برای کنترل باز/بسته شدن منو
   const [menu, setMenu] = useState(false);
+
+  // گرفتن مسیر فعلی
+  const pathname = usePathname();
 
   return (
     <header className="bg-white relative z-[100]">
@@ -53,9 +57,7 @@ export default function Header() {
             { to: "/about-us", label: "درباره ما" },
             { to: "/game-order", label: "سفارش بازی" },
           ].map((item, idx) => {
-            const isActive =
-              typeof window !== "undefined" &&
-              window.location.pathname === item.to;
+            const isActive = pathname === item.to;
             return (
               <a
                 key={idx}
