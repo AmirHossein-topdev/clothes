@@ -1,4 +1,5 @@
 import { HiShoppingCart } from "react-icons/hi";
+
 export default function Grade({ product }) {
   return (
     <div className="relative w-64 h-80 hover:scale-95 duration-300 ease-in-out">
@@ -36,15 +37,17 @@ export default function Grade({ product }) {
           <p className="text-xs text-gray-300 mt-1 line-clamp-2">
             {product.description}
           </p>
-          <span className="text-sm font-bold mt-4 block">
-            ₩{product.price.toLocaleString()}
-          </span>
         </div>
       </div>
 
-      {/* دکمه سبد خرید */}
-      <div className="absolute bottom-1 left-3 w-12 h-12 bg-blue-500 rounded-2xl flex items-center justify-center text-white shadow-lg cursor-pointer">
-        <HiShoppingCart size={20} />
+      {/* قیمت و دکمه سبد خرید کنار هم */}
+      <div className="absolute bottom-1 left-3 right-3 flex items-center justify-between px-3">
+        <span className="text-sm font-bold text-white">
+          {product.price.toLocaleString()} تومان
+        </span>
+        <div className="w-12 h-12 -me-3 bg-blue-500 rounded-2xl flex items-center justify-center text-white shadow-lg cursor-pointer">
+          <HiShoppingCart size={20} />
+        </div>
       </div>
     </div>
   );
