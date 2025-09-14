@@ -31,7 +31,7 @@ export default function Hero() {
                 <img
                   src={src}
                   alt={`banner-${index}`}
-                  className="w-full h-36"
+                  className="w-full h-36 md:h-60"
                 />
               </SwiperSlide>
             ))}
@@ -40,7 +40,7 @@ export default function Hero() {
       </div>
 
       {/* Text box */}
-      <div className=" md:w-1/4 rounded-2xl p-4 relative overflow-hidden flex-shrink-0">
+      <div className=" md:w-1/4 rounded-2xl p-4 md:pt-7 relative overflow-hidden flex-shrink-0">
         {/* بک‌گراند تصویر */}
         <div className="absolute inset-0 bg-[url('/images/snow-bg.png')] bg-cover bg-center -z-20"></div>
 
@@ -48,11 +48,11 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black/30 -z-10"></div>
 
         {/* محتوای اصلی */}
-        <div className="relative z-10 text-white flex flex-col justify-center h-full text-center">
-          <span className="font-bold scale-y-170 leading-8 text-[14px] md:text-xl font-[Vazir]">
+        <div className="relative z-10 text-white flex flex-col justify-center h-full text-center ">
+          <span className="font-bold scale-y-170 leading-8 text-[14px] md:text-xl font-[Vazir] ">
             زیبایی و گرمای زمستان با مجموعه لباس‌های ما
           </span>
-          <p className="my-3 text-[11px] font-extralight">
+          <p className="my-3 mt-8 text-[11px] font-extralight">
             برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن
             گرافیک است.
           </p>

@@ -14,7 +14,7 @@ import "@tinymomentum/liquid-glass-react/dist/components/LiquidGlassBase.css";
 const SaleCountdown = ({ hoursLeft = 5 }) => {
   return (
     <LiquidGlassContainer
-      width={250}
+      width={260}
       height={100}
       borderRadius={28}
       innerShadowColor="#000000"
@@ -25,14 +25,14 @@ const SaleCountdown = ({ hoursLeft = 5 }) => {
       frostBlurRadius={0}
       noiseFrequency={0.008}
       noiseStrength={77}
-      className="flex flex-col items-center justify-center p-4"
+      className="flex items-center justify-center p-4"
     >
       <Countdown
         date={Date.now() + hoursLeft * 60 * 60 * 1000}
         renderer={({ total, hours, minutes, seconds }) => {
           const h = Math.floor(total / 1000 / 60 / 60); // ساعت کل
           return (
-            <div className="flex gap-4 items-center text-white font-bold text-xl">
+            <div className="flex gap-4 ms-6 items-center text-white font-bold text-xl">
               {/* ثانیه */}
               <div className="flex flex-col items-center">
                 <span>{seconds.toString().padStart(2, "0")}</span>
@@ -66,14 +66,19 @@ export default function GradeBox1() {
       </span>
       <span className="block mt-2 text-xl font-bold">بیشترین تخفیف ها</span>
 
-      <div className="relative bg-[url('/images/snow-bg.png')] bg-cover py-6 px-4 rounded-2xl shadow-2xl my-5 z-10">
-        <span className="text-white font-bold text-lg block mb-4">
-          محصولات شگفتانه <br />
-          (فرصتی شگفت انگیز برای خرید پوشاک)
-        </span>
+      <div className="relative bg-[url('/images/snow-bg.png')] bg-cover py-6 px-5 rounded-2xl shadow-2xl my-5 z-10">
+        <div className="md:flex md:justify-between md:ps-10 md:items-center w-full">
+          {/* متن سمت راست */}
+          <div className="text-white font-bold text-lg md:text-2xl mb-4 md:mb-0">
+            محصولات شگفتانه <br className="md:hidden" />
+            (فرصتی شگفت انگیز برای خرید پوشاک)
+          </div>
 
-        {/* تایمر شیشه‌ای */}
-        <SaleCountdown hoursLeft={10} />
+          {/* تایمر سمت چپ */}
+          <div className="me-8 mt-2">
+            <SaleCountdown hoursLeft={2} />
+          </div>
+        </div>
 
         {/* گرید محصولات */}
         <div className="flex gap-4 overflow-x-scroll hide-scrollbar mt-3 pb-4">
