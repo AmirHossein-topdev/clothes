@@ -24,8 +24,8 @@ export default function GradeBox1() {
           <span
             key={cat}
             onClick={() => setselectCategory(cat)}
-            className={`border bg-white border-gray-200 rounded-xl p-2 px-3 shadow-xl ${
-              selectCategory === cat ? "bg-sky-200" : ""
+            className={`border border-gray-200 rounded-xl  p-2 px-3 shadow-xl ${
+              selectCategory === cat ? "bg-sky-800 text-white" : "bg-white"
             }`}
           >
             {cat}
@@ -33,9 +33,9 @@ export default function GradeBox1() {
         ))}
       </div>
 
-      <div className="bg-gray-900 mx-auto py-6 px-4 rounded-2xl shadow-2xl my-5 z-10">
+      <div className="bg-gray-900 w-[80vw] mx-auto py-6 px-4 rounded-2xl shadow-2xl my-5 z-10">
         <div className="flex flex-col items-center hide-scrollbar">
-          {filterProducts.map((product) => (
+          {filterProducts.slice(0, 4).map((product) => (
             <div
               key={product.id}
               className="relative z-20 w-full max-w-[218px]"
@@ -55,7 +55,8 @@ export default function GradeBox1() {
               <Grade product={product} />
             </div>
           ))}
-        </div> */}
+        </div>
+      </div> */}
     </section>
   );
 }
