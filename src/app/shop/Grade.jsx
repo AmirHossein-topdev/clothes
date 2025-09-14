@@ -1,6 +1,6 @@
 import { HiShoppingCart } from "react-icons/hi";
 
-export default function GradeOff({ product }) {
+export default function Grade({ product }) {
   return (
     <div className="relative w-[218px] h-80 hover:scale-95 duration-300 ease-in-out">
       {/* SVG پس‌زمینه */}
@@ -11,7 +11,7 @@ export default function GradeOff({ product }) {
       >
         <path
           d="M 5 12 M 5 1 Q 5 0 6 0 L 16 0 Q 17 0 17 1 L 17 15 Q 17 16 16 16 L 9 16 Q 8 16 8 15 L 8 14 Q 8 13 7 13 L 6 13 Q 5 13 5 12 L 5 1 M 8 15 L 8 14 M 16 16"
-          className="fill-white/40 z-20 "
+          className="fill-white/25 z-20 "
         />
       </svg>
 
