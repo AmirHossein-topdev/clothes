@@ -10,6 +10,7 @@ const products = [
     price: 1850000,
     image: "/images/jacket1.webp",
     category: "کاپشن",
+    off: "20%",
   },
   {
     id: 2,

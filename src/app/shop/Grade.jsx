@@ -2,7 +2,7 @@ import { HiShoppingCart } from "react-icons/hi";
 
 export default function GradeOff({ product }) {
   return (
-    <div className="relative w-64 h-80 hover:scale-95 duration-300 ease-in-out">
+    <div className="relative w-56 h-80 hover:scale-95 duration-300 ease-in-out">
       {/* SVG پس‌زمینه */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -18,12 +18,12 @@ export default function GradeOff({ product }) {
       {/* محتوای محصول */}
       <div className="absolute top-2 left-1 right-1 bottom-0 flex flex-col items-center text-white">
         {/* دسته‌بندی */}
-        <span className="text-xs absolute right-3 top-0 bg-sky-700 px-2 py-1 rounded-full w-max">
+        <span className="text-xs absolute [writing-mode:vertical-rl] right-1 top-2 bg-sky-700 px-2 py-1 rounded-full w-max">
           {product.category}
         </span>
         {/* دسته‌بندی */}
         {product.off && (
-          <span className="text-[10px] absolute left-3 top-0 bg-red-700 px-1 py-2 rounded-full w-max flex flex-col items-center">
+          <span className="text-[10px] absolute left-[2px] top-2 bg-red-700 px-1 py-2 rounded-full w-max flex flex-col items-center">
             <span>{product.off}</span>
             <span className="[writing-mode:vertical-rl] text-[10px]">
               تخفیف
@@ -36,21 +36,21 @@ export default function GradeOff({ product }) {
           <img
             src={product.image}
             alt={product.name}
-            className="h-40 object-fit rounded-2xl"
+            className="h-36 object-fit rounded-2xl"
           />
         </div>
 
         {/* توضیحات */}
-        <div className="mt-2 w-full ps-5 text-right">
+        <div className="mt-3 w-full ps-5 text-right">
           <h3 className="text-lg font-semibold">{product.name}</h3>
-          <p className="text-xs text-gray-100 mt-1 line-clamp-2">
+          <p className="text-xs text-gray-100 mt-2 line-clamp-2">
             {product.description}
           </p>
         </div>
       </div>
 
       {/* قیمت و دکمه سبد خرید کنار هم */}
-      <div className="absolute bottom-1 left-3 right-3 flex items-center justify-between px-3">
+      <div className="absolute bottom-3 left-0 right-3 flex items-center justify-between px-3">
         <span className="text-sm font-bold text-white">
           {product.price.toLocaleString()} تومان
         </span>
