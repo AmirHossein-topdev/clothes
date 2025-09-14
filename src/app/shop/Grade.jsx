@@ -2,7 +2,7 @@ import { HiShoppingCart } from "react-icons/hi";
 
 export default function GradeOff({ product }) {
   return (
-    <div className="relative w-56 h-80 hover:scale-95 duration-300 ease-in-out">
+    <div className="relative w-[218px] h-80 hover:scale-95 duration-300 ease-in-out">
       {/* SVG پس‌زمینه */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -18,12 +18,12 @@ export default function GradeOff({ product }) {
       {/* محتوای محصول */}
       <div className="absolute top-2 left-1 right-1 bottom-0 flex flex-col items-center text-white">
         {/* دسته‌بندی */}
-        <span className="text-xs absolute [writing-mode:vertical-rl] right-1 top-2 bg-sky-700 px-2 py-1 rounded-full w-max">
+        <span className="text-xs absolute [writing-mode:vertical-rl] right-1 top-4 bg-sky-700 px-2 py-1 rounded-full w-max">
           {product.category}
         </span>
         {/* دسته‌بندی */}
         {product.off && (
-          <span className="text-[10px] absolute left-[2px] top-2 bg-red-700 px-1 py-2 rounded-full w-max flex flex-col items-center">
+          <span className="text-[10px] absolute left-[2px] top-4 bg-red-700 px-1 py-2 rounded-full w-max flex flex-col items-center">
             <span>{product.off}</span>
             <span className="[writing-mode:vertical-rl] text-[10px]">
               تخفیف

@@ -80,6 +80,80 @@ export default function Story() {
         },
       ],
     },
+    {
+      id: 7,
+      name: "کاپشن",
+      avatar: "/images/jacket-logo.webp",
+      stories: [
+        { url: "/images/jacket1.webp", duration: 3000, type: "image" },
+        { url: "/images/jacket2.webp", duration: 4000, type: "image" },
+        { url: "/images/jacket3.webp", duration: 2000, type: "image" },
+      ],
+    },
+    {
+      id: 8,
+      name: "شال و کلاه",
+      avatar: "/images/scarf-logo.webp",
+      stories: [
+        { url: "/images/scarf1.webp", duration: 5000, type: "image" },
+        { url: "/images/scarf2.webp", duration: 3000, type: "image" },
+        { url: "/images/scarf.webp", duration: 3000, type: "image" },
+      ],
+    },
+    {
+      id: 9,
+      name: "چتر",
+      avatar: "/images/umbrella1.webp",
+      stories: [
+        {
+          url: "/images/umbrella2.webp",
+          duration: 4000,
+          type: "image",
+        },
+        {
+          url: "/images/umbrella3.webp",
+          duration: 4000,
+          type: "image",
+        },
+      ],
+    },
+    {
+      id: 10,
+      name: "کاپشن",
+      avatar: "/images/jacket-logo.webp",
+      stories: [
+        { url: "/images/jacket1.webp", duration: 3000, type: "image" },
+        { url: "/images/jacket2.webp", duration: 4000, type: "image" },
+        { url: "/images/jacket3.webp", duration: 2000, type: "image" },
+      ],
+    },
+    {
+      id: 11,
+      name: "شال و کلاه",
+      avatar: "/images/scarf-logo.webp",
+      stories: [
+        { url: "/images/scarf1.webp", duration: 5000, type: "image" },
+        { url: "/images/scarf2.webp", duration: 3000, type: "image" },
+        { url: "/images/scarf.webp", duration: 3000, type: "image" },
+      ],
+    },
+    {
+      id: 12,
+      name: "چتر",
+      avatar: "/images/umbrella1.webp",
+      stories: [
+        {
+          url: "/images/umbrella2.webp",
+          duration: 4000,
+          type: "image",
+        },
+        {
+          url: "/images/umbrella3.webp",
+          duration: 4000,
+          type: "image",
+        },
+      ],
+    },
   ];
 
   const closeStories = () => setActiveIndex(null);
@@ -93,7 +167,7 @@ export default function Story() {
   };
 
   return (
-    <section dir="rtl" className="font-[Vazir] -ms-5">
+    <section dir="rtl" className="font-[Vazir] -ms-">
       {/* نوار استوری‌ها */}
       <div className="flex overflow-x-auto p-3 bg-white mb-5 gap-2 hide-scrollbar">
         {users.map((user, idx) => (
