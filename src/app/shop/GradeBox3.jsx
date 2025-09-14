@@ -17,22 +17,35 @@ export default function GradeBox1() {
         محصولات اخیر
       </span>
       <span className="block mt-2 text-xl font-bold">
-        جدید ترین محصولات فروشگاه
+        جـــــــــــــــــدیدترین محصولات فروشگاه
       </span>
-      <div className="flex gap-3 flex-wrap justify-center mt-3">
+      <div className="flex gap-3 flex-wrap justify-center mt-3 sticky top-2 z-30">
         {categories.map((cat) => (
           <span
             key={cat}
             onClick={() => setselectCategory(cat)}
-            className={`bg-sky-100 ring-1 rounded-xl p-2 px-3 shadow-xl ${
-              selectCategory === cat ? "bg-sky-500" : ""
+            className={`border bg-white border-gray-200 rounded-xl p-2 px-3 shadow-xl ${
+              selectCategory === cat ? "bg-sky-200" : ""
             }`}
           >
             {cat}
           </span>
         ))}
       </div>
-      <div className="bg-cyan-700 py-6 px-4 rounded-2xl shadow-2xl my-5 z-10">
+
+      <div className="bg-gray-900 mx-auto py-6 px-4 rounded-2xl shadow-2xl my-5 z-10">
+        <div className="flex flex-col items-center hide-scrollbar">
+          {filterProducts.map((product) => (
+            <div
+              key={product.id}
+              className="relative z-20 w-full max-w-[218px]"
+            >
+              <Grade product={product} />
+            </div>
+          ))}
+        </div>
+      </div>
+      {/* <div className="bg-cyan-700 py-6 px-4 rounded-2xl shadow-2xl my-5 z-10">
         <div className="flex gap-4 overflow-x-scroll hide-scrollbar">
           {filterProducts.map((product) => (
             <div
@@ -42,8 +55,7 @@ export default function GradeBox1() {
               <Grade product={product} />
             </div>
           ))}
-        </div>
-      </div>
+        </div> */}
     </section>
   );
 }
