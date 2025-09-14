@@ -12,7 +12,10 @@ export default function GradeBox1() {
       <div className="bg-[url('/images/snow-bg.png')] bg-cover py-4 px-4 rounded-2xl shadow-2xl my-5 z-10">
         <div className="flex gap-4 overflow-x-scroll hide-scrollbar">
           {products.slice(6, 10).map((product) => (
-            <div key={product.id} className="flex-shrink-0 w-56 relative z-20">
+            <div
+              key={product.id}
+              className="flex-shrink-0 w-[218px] relative z-20"
+            >
               <Grade product={product} />
             </div>
           ))}

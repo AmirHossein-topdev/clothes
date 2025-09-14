@@ -11,12 +11,12 @@ export default function GradeOff({ product }) {
       >
         <path
           d="M 5 12 M 5 1 Q 5 0 6 0 L 16 0 Q 17 0 17 1 L 17 15 Q 17 16 16 16 L 9 16 Q 8 16 8 15 L 8 14 Q 8 13 7 13 L 6 13 Q 5 13 5 12 L 5 1 M 8 15 L 8 14 M 16 16"
-          className="fill-white/40 z-20"
+          className="fill-white/40 z-20 "
         />
       </svg>
 
       {/* محتوای محصول */}
-      <div className="absolute top-2 left-1 right-1 bottom-0 flex flex-col items-center text-white">
+      <div className="absolute top-2 left-1 right-1 bottom-0 flex flex-col items-center text-white ">
         {/* دسته‌بندی */}
         <span className="text-xs absolute [writing-mode:vertical-rl] right-1 top-4 bg-sky-700 px-2 py-1 rounded-full w-max">
           {product.category}
@@ -50,7 +50,7 @@ export default function GradeOff({ product }) {
       </div>
 
       {/* قیمت و دکمه سبد خرید کنار هم */}
-      <div className="absolute bottom-3 left-0 right-3 flex items-center justify-between px-3">
+      <div className="absolute bottom-4 left-0 right-3 flex items-center justify-between px-3">
         <span className="text-sm font-bold text-white">
           {product.price.toLocaleString()} تومان
         </span>
