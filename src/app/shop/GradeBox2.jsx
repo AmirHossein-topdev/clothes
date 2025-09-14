@@ -60,7 +60,7 @@ const SaleCountdown = ({ hoursLeft = 5 }) => {
 
 export default function GradeBox1() {
   return (
-    <section className="text-center my-10 font-vazir relative">
+    <section className="text-center my-10 font-vazir relative mx-auto">
       <span className="p-1 px-3 bg-gray-200 rounded-2xl font-bold text-xs">
         تخفیفی ها
       </span>
@@ -75,7 +75,7 @@ export default function GradeBox1() {
           </div>
 
           {/* تایمر سمت چپ */}
-          <div className="me-8 mt-2">
+          <div className="md:me-8 mt-2">
             <SaleCountdown hoursLeft={2} />
           </div>
         </div>
