@@ -16,10 +16,7 @@ const categoryData = {
 
 export default function Categories() {
   return (
-    <div className="my-6 px-4 text-center">
-      <span className="bg-blue-500 p-1 px-3 font-bold text-lg rounded-2xl my-2 text-white inline-block">
-        دسته بندی
-      </span>
+    <div className="my-12 px-4 text-center">
       <div className="flex gap-6 overflow-x-auto hide-scrollbar justify-center flex-nowrap mt-7">
         {categories.map((cat) => (
           <div

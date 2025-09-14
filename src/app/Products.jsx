@@ -20,6 +20,7 @@ const products = [
     price: 850000,
     image: "/images/jacket2.webp",
     category: "هودی",
+    off: "10%",
   },
   {
     id: 3,
@@ -60,6 +61,7 @@ const products = [
     price: 1450000,
     image: "/images/jacket2.webp",
     category: "کاپشن",
+    off: "10%",
   },
   {
     id: 7,
@@ -70,6 +72,7 @@ const products = [
     price: 920000,
     image: "/images/hoodie2.webp",
     category: "هودی",
+    off: "40%",
   },
   {
     id: 8,
@@ -90,6 +93,7 @@ const products = [
     price: 770000,
     image: "/images/sweater2.webp",
     category: "پلیور",
+    off: "20%",
   },
   {
     id: 10,
@@ -100,6 +104,7 @@ const products = [
     price: 2100000,
     image: "/images/leatherjacket1.webp",
     category: "کت",
+    off: "25%",
   },
   {
     id: 11,
