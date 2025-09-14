@@ -93,9 +93,9 @@ export default function Story() {
   };
 
   return (
-    <section dir="rtl" className="font-[Vazir]">
+    <section dir="rtl" className="font-[Vazir] -ms-7">
       {/* نوار استوری‌ها */}
-      <div className="flex space-x-3 space-x-reverse overflow-x-auto p-3 bg-white my-5 gap-2 hide-scrollbar">
+      <div className="flex overflow-x-auto p-3 bg-white my-5 gap-2 hide-scrollbar">
         {users.map((user, idx) => (
           <button
             key={user.id}

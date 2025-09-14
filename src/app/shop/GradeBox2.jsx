@@ -8,9 +8,7 @@ export default function GradeBox1() {
       <span className="p-1 px-3  bg-gray-200 rounded-2xl font-bold text-xs">
         تخفیفی ها
       </span>
-      <span className="block mt-2 text-xl font-bold">
-        پرفروش ترین های هر ماه
-      </span>
+      <span className="block mt-2 text-xl font-bold">بیشترین تخفیف ها</span>
       <div className="bg-[url('/images/snow-bg.png')] bg-cover py-8 px-4 rounded-2xl shadow-2xl my-5 z-10">
         <div className="flex gap-4 overflow-x-scroll hide-scrollbar">
           {products.slice(6, 10).map((product) => (
