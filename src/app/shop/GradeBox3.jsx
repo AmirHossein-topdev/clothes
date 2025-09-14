@@ -19,7 +19,7 @@ export default function GradeBox1() {
       <span className="block mt-2 text-xl font-bold">
         جـــــــــــــــــدیدترین محصولات فروشگاه
       </span>
-      <div className="flex gap-3 flex-wrap justify-center mt-3 sticky top-2 z-30">
+      <div className="flex gap-3 flex-wrap justify-center mt-3 z-30">
         {categories.map((cat) => (
           <span
             key={cat}
