@@ -28,7 +28,11 @@ export default function Hero() {
           >
             {images.map((src, index) => (
               <SwiperSlide key={index}>
-                <img src={src} alt={`banner-${index}`} className="w-full" />
+                <img
+                  src={src}
+                  alt={`banner-${index}`}
+                  className="w-full h-36"
+                />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -45,12 +49,11 @@ export default function Hero() {
 
         {/* محتوای اصلی */}
         <div className="relative z-10 text-white flex flex-col justify-center h-full text-center">
-          <span className="font-bold text-xl font-[Vazir]">
+          <span className="font-bold scale-y-170 leading-8 text-[14px] md:text-xl font-[Vazir]">
             زیبایی و گرمای زمستان با مجموعه لباس‌های ما
           </span>
           <p className="my-3 text-[11px] font-extralight">
             برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن
-            ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
             گرافیک است.
           </p>
           <button

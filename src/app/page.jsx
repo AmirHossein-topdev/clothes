@@ -7,7 +7,7 @@ import Categories from "./shop/Categories";
 import Hero from "./components/Hero";
 export default function Home() {
   return (
-    <section className="w-[85vw] mx-auto">
+    <section className="w-[90vw] mx-auto">
       <Stories />
       <Hero />
       <Categories />

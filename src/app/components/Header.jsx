@@ -24,9 +24,9 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="bg-white relative z-[100]">
+    <header className="bg-white relative z-[100] pb-4 border-b-1">
       {/* نوار قرمز بالای صفحه */}
-      <section className="bg-red-400 rounded-b-2xl flex items-center justify-center text-white text-center text-sm md:text-[15px]  p-1 px-3 mx-4 md:w-[90vw] md:mx-auto cursor-pointer">
+      <section className="bg-cyan-500 rounded-b-2xl flex items-center justify-center text-white text-center text-sm md:text-[15px]  p-1 px-3 mx-4 md:w-[90vw] md:mx-auto cursor-pointer">
         <span className="flex items-center">
           <span>{text}</span>
           <Cursor cursorStyle="|" />

@@ -93,16 +93,16 @@ export default function Story() {
   };
 
   return (
-    <section dir="rtl" className="font-[Vazir] -ms-7">
+    <section dir="rtl" className="font-[Vazir] -ms-5">
       {/* نوار استوری‌ها */}
-      <div className="flex overflow-x-auto p-3 bg-white my-5 gap-2 hide-scrollbar">
+      <div className="flex overflow-x-auto p-3 bg-white mb-5 gap-2 hide-scrollbar">
         {users.map((user, idx) => (
           <button
             key={user.id}
             className="flex flex-col items-center focus:outline-none"
             onClick={() => setActiveIndex(idx)}
           >
-            <div className="w-17 h-17 rounded-full border-2 border-blue-500 p-1 cursor-pointer ">
+            <div className="w-14 md:w-16 h-14 md:h-16 rounded-full border-2 border-blue-500 p-1 cursor-pointer ">
               <img
                 src={user.avatar}
                 alt={user.name}
