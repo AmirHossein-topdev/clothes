@@ -3,7 +3,7 @@ import React from "react";
 import products from "../Products";
 
 // استخراج دسته‌بندی‌ها
-const categories = Array.from(new Set(products.map((p) => p.category)));
+const categories = Array.from(new Set(products.map((p) => p.category.trim())));
 
 // آیکن و اسم انگلیسی هر دسته
 const categoryData = {
@@ -17,9 +17,13 @@ const categoryData = {
 export default function Categories() {
   return (
     <div className="my-8 px-4 text-center">
-      <div className="flex gap-6 overflow-x-auto hide-scrollbar justify-center flex-nowrap mt-7">
+      <div className="flex gap-6 overflow-x-auto hide-scrollbar justify-start flex-nowrap mt-7">
         {categories.map((cat) => {
-          const data = categoryData[cat];
+          const data = categoryData[cat.trim()] || {
+            icon: "/images/default.png",
+            en: cat,
+          };
+
           if (!data) return null; // اگر آیکن یا اسم انگلیسی تعریف نشده بود
 
           return (
