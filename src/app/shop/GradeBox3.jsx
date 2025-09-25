@@ -34,7 +34,7 @@ export default function GradeBox1() {
       </div>
 
       <div className="bg-gray-900 w-[80vw] mx-auto py-6 px-4 rounded-2xl shadow-2xl my-5 z-10">
-        <div className="flex flex-col items-center hide-scrollbar">
+        <div className="flex gap-4 overflow-x-scroll hide-scrollbar p-0">
           {filterProducts.slice(0, 4).map((product) => (
             <div
               key={product.id}
