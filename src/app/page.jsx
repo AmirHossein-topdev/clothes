@@ -6,6 +6,7 @@ import GradeBox2 from "./shop/GradeBox2";
 import GradeBox3 from "./shop/GradeBox3";
 import Categories from "./shop/Categories";
 import Hero from "./components/Hero";
+import OffBox from "./components/OffBox";
 export default function Home() {
   return (
     <section className="w-[90vw] mx-auto">
@@ -15,6 +16,7 @@ export default function Home() {
       <GradeBox1 />
       <GradeBox2 />
       <GradeBox3 />
+      <OffBox />
       {/* <Grade /> */}
       <p className="my-20 mx-auto w-[90vw]">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit atque
