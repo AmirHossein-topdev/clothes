@@ -19,13 +19,6 @@ export default function Home() {
       <GradeBox3 />
       <OffBox />
       <WhyUs />
-      {/* <Grade /> */}
-      <p className="my-20 mx-auto w-[90vw]">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit atque
-        odio architecto. Sed reiciendis dignissimos voluptate earum excepturi,
-        dolore dolores accusantium soluta, repudiandae non obcaecati sit
-        architecto dicta praesentium aperiam.
-      </p>
     </section>
   );
 }
