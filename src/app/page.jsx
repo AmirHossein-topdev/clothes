@@ -9,6 +9,7 @@ import Hero from "./components/Hero";
 import OffBox from "./components/OffBox";
 import Blog from "./components/Blog";
 import WhyUs from "./components/WhyUs";
+import FavoriteBrands from "./components/FavoriteBrands";
 export default function Home() {
   return (
     <section className="w-[90vw] mx-auto">
@@ -20,6 +21,7 @@ export default function Home() {
       <GradeBox3 />
       <OffBox />
       <WhyUs />
+      <FavoriteBrands />
       <Blog />
     </section>
   );
