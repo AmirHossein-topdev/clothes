@@ -78,14 +78,14 @@ export default function FavoriteBrands() {
         {repeatedBrands.map((brand, idx) => (
           <div
             key={idx}
-            className="min-w-[120px] flex items-center justify-center rounded-lg shadow-md p-4"
+            className="min-w-[120px] flex items-center justify-center rounded-lg shadow-md p-7 py-5"
           >
             <Image
               src={brand}
               alt={`برند ${idx + 1}`}
               width={100}
               height={64}
-              className="h-8 w-full object-contain "
+              className="h-10 w-full object-contain "
             />
           </div>
         ))}
