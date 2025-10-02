@@ -4,7 +4,7 @@ import { FaShoppingBasket } from "react-icons/fa";
 
 export default function WhyUs() {
   return (
-    <section className="my-10 mb-25">
+    <section className="my-10 ">
       <h2 className="bg-gray-200 w-fit p-1 px-2 rounded-xl">چرا ما ؟</h2>
       <h1 className="my-2 font-extrabold text-2xl font-stretch-100%">
         چرا فروشگاه پوشاک زمستانی <span className="text-cyan-600">تست</span>

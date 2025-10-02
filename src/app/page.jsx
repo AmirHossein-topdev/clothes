@@ -7,6 +7,7 @@ import GradeBox3 from "./shop/GradeBox3";
 import Categories from "./shop/Categories";
 import Hero from "./components/Hero";
 import OffBox from "./components/OffBox";
+import Blog from "./components/Blog";
 import WhyUs from "./components/WhyUs";
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <GradeBox3 />
       <OffBox />
       <WhyUs />
+      <Blog />
     </section>
   );
 }

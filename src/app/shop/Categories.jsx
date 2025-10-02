@@ -17,7 +17,7 @@ const categoryData = {
 export default function Categories() {
   return (
     <div className="my-8 px-4 text-center">
-      <div className="flex gap-6 overflow-x-auto hide-scrollbar justify-start md:justify-center flex-nowrap mt-7">
+      <div className="flex gap-6 overflow-x-auto hide-scrollbar justify-start md:justify-center flex-wrap mt-7">
         {categories.map((cat) => {
           const data = categoryData[cat.trim()] || {
             icon: "/images/default.png",
@@ -29,7 +29,7 @@ export default function Categories() {
           return (
             <div
               key={cat}
-              className="flex items-center gap-2 bg-gray-100 px-4 py-3 rounded-xl flex-shrink-0 cursor-pointer hover:bg-gray-300 transition-colors"
+              className="flex flex-1 min-w-[150px] text-center justify-center items-center gap-2 bg-gray-100 px-4 py-3 rounded-xl flex-shrink-0 cursor-pointer hover:bg-gray-300 transition-colors"
             >
               {/* آیکن دسته */}
               <img
