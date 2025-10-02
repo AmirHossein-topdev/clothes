@@ -63,9 +63,9 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative bg-[url('/images/snow-bg.png')] bg-cover bg-center bg-white/60 bg-blend-overlay text-gray-900 p-8">
+    <footer className="relative bg-[url('/images/snow-bg.png')] bg-cover bg-center bg-white/60 bg-blend-overlay text-gray-900 p-8 ">
       {/* باکس سفید بالای فوتر */}
-      <div className="absolute left-1/2 -top-16 -translate-x-1/2 w-[90%] md:w-4/5 bg-white border rounded-2xl shadow-xl p-4 py-5 grid grid-cols-3 md:grid-cols-4 gap-y-6 gap-x-2">
+      <div className="absolute left-1/2 -top-16 md:-top-10 -translate-x-1/2 w-[90%] md:w-4/5 bg-white border rounded-2xl shadow-xl p-4 py-5 grid grid-cols-3 md:grid-cols-4 gap-y-6 gap-x-2">
         {featureCards.map((card, index) => (
           <div
             key={index}
@@ -75,16 +75,18 @@ export default function Footer() {
           >
             <div>{card.icon}</div>
             <div>
-              <h4 className="font-bold text-[11px] text-gray-800">
+              <h4 className="font-bold text-[11px] md:text-[14px] text-gray-800">
                 {card.title}
               </h4>
-              <p className="text-[9px] text-gray-500">{card.subtitle}</p>
+              <p className="text-[9px] md:text-[12px] text-gray-500">
+                {card.subtitle}
+              </p>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="max-w-6xl mx-auto mt-16 md:mt-0">
+      <div className="max-w-6xl mx-auto mt-16 md:mt-5">
         {/* لوگو */}
         <img
           src="/images/snowman.png"
@@ -99,7 +101,7 @@ export default function Footer() {
         </p>
 
         {/* ستون‌ها */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mt-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-6">
           {footerLinks.map((section) => (
             <div
               key={section.title}
