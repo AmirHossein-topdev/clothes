@@ -64,7 +64,7 @@ export default function FavoriteBrands() {
 
   return (
     <section className="font-[Vazir] rtl w-[80vw] rounded-3xl  mx-auto text-black pb-10 relative">
-      <h2 className=" text-xl md:text-2xl font-bold mb-2 text-center">
+      <h2 className=" text-xl md:text-2xl font-bold mb-5 text-center">
         محبوب‌ترین برندها
       </h2>
       {/* لیست برندها */}
@@ -85,7 +85,7 @@ export default function FavoriteBrands() {
               alt={`برند ${idx + 1}`}
               width={100}
               height={64}
-              className="h-10 w-full object-contain"
+              className="h-8 w-full object-contain "
             />
           </div>
         ))}
