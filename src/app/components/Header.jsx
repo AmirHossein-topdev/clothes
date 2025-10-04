@@ -45,7 +45,9 @@ export default function Header() {
         </span>
 
         {/* نام برند برای موبایل و دسکتاپ */}
-        <h1 className="font-bold text-lg md:order-1 md:ml-0">نام برند</h1>
+        <h1 className="font-bold text-lg md:order-1 md:ml-0">
+          <a href="/">نام برند</a>
+        </h1>
 
         {/* لینک‌ها برای سایز بزرگتر از md */}
         <nav className="hidden md:flex gap-4 items-center justify-center flex-1 order-2">
